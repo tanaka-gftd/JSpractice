@@ -1,5 +1,7 @@
 console.log(Math.floor(Math.random() * 2));
 
+
+
 const randomNum = Math.floor(Math.random() * 2);
 //console.log(randomNum);
 if(randomNum){
@@ -8,6 +10,8 @@ if(randomNum){
   console.log('裏');
 };
 
+
+
 const randomFlower = Math.floor(Math.random() * 2 + 9);
 //console.log(randomFlower);
 if(randomFlower % 2 === 1){
@@ -15,6 +19,8 @@ if(randomFlower % 2 === 1){
 } else {
   console.log('キライ');
 };
+
+
 
 const omikuji = Math.floor(Math.random() * 4);
 console.log(omikuji);
@@ -35,6 +41,8 @@ switch (omikuji){
     break;
 };
 
+
+
 for(let i = 1; i <= 5; i++){
   if(Math.floor(Math.random() * 10)  === 0){
     console.log('あたり');
@@ -42,6 +50,8 @@ for(let i = 1; i <= 5; i++){
     console.log('はずれ');
   };
 };
+
+
 
 for(let i = 1; i >= 1; i++){  //思いつかなかったのでこの方法（意図的に無限ループを作り、breakでループを抜ける）
   if(Math.floor(Math.random() * 10)  === 0){
@@ -61,9 +71,13 @@ for(let i = 1; i >= 1; i++){  //思いつかなかったのでこの方法（意
   console.log(`あたり！ ${counter}回目であたりが出ました。`);
 */
 
+
+
 const dice1 =  Math.floor(Math.random() * 6 + 1);
 const dice2 =  Math.floor(Math.random() * 6 + 1);
 console.log(`一つ目のサイコロの目は${dice1}`, `二つ目のサイコロの目は${dice2}`, `二つのサイコロの合計は${dice1+dice2}です。`);
+
+
 
 let sum = 0;
 for(let i = 1; i <= 10; i++){
@@ -72,6 +86,8 @@ for(let i = 1; i <= 10; i++){
   sum+=dice;
 };
 console.log(`出目の合計は${sum}です。`);
+
+
 
 const lots = ['大吉', '吉', '中吉', '小吉', '凶'];
 let daikitiCount = 0;
@@ -95,6 +111,8 @@ console.log(`大吉のでた回数は${daikitiCount}回、大吉の出現率は$
   console.log(`大吉を引く確率は約 ${counter / loopTimes} です。`);
 */
 
+
+
 const dice =  () => Math.floor(Math.random() * 6 + 1);
 const loopTimes = 100000;
 let evenCount = 0;
@@ -108,6 +126,8 @@ for(let i = 1; i <= 100000; i++){
 };
 console.log(`２つのサイコロの目の合計が偶数になった割合は${evenCount/loopTimes*100}%、奇数になった割合は${oddCount/loopTimes*100}%`);
 
+
+
 const zahyou = () => Math.random() * 2 - 1;
 const squareHen = 2;
 const loopTimes2 = 10000000;
@@ -120,6 +140,8 @@ for(let i = 1; i <= loopTimes2; i++){
 };
 const pi = (squareHen**2)*(point/loopTimes2)/((squareHen/2)**2);  //（四角形の面積）÷（座標が円内の割合）✖️（半径の2乗）...おおよその円周率
 console.log(`円周率はおおよそ${pi}です。`);
+
+
 
 let winCount = 0;
 let loseCount = 0;
@@ -136,6 +158,3 @@ for(let i = 1; i <= TRIALS; i++){
   };
 };
 console.log(`勝率は ${Math.round(winCount / TRIALS * 100)}%です。`)
-
-
-

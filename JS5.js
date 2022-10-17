@@ -2,9 +2,13 @@ for(let i = 1; i<=10; i++){
   console.log(i);
 };
 
+
+
 for(let i = 10; i>=0; i--){
   console.log(`あと${i}日`);
 };
+
+
 
 const number = 20;
 let result = 0;
@@ -13,12 +17,16 @@ for(let i = 1; i<=number; i++){
 };
 console.log(result);
 
+
+
 const number2 = 7;
 let result2 = 1;
 for(let i = 1; i <= number2; i++){
   result2*=i
 };
 console.log(result2);
+
+
 
 for(let i = 1; i<=10; i++){
   if(i%3===0){
@@ -27,6 +35,8 @@ for(let i = 1; i<=10; i++){
     console.log(i);
   };
 };
+
+
 
 for(let i =1; i<=30; i++){
   if(i%3===0 && i%5===0) {
@@ -40,6 +50,8 @@ for(let i =1; i<=30; i++){
   };
 };
 
+
+
 const number3 = 24;
 let isPrimeNumber = true;
 for (let i = 2; i<number3; i++){
@@ -52,6 +64,8 @@ if(isPrimeNumber){
 } else {
   console.log(`${number3}は素数ではありません`);
 };
+
+
 
 let prev2 = 0;
 let prev1 = 1;
@@ -69,10 +83,11 @@ for (let i = 0; i<=20; i++){
   }
 };
 
+
+
 for(let i = 1; i<=9; i++){
   console.log(`${i} の位の掛け算`);
   for(let j = 1; j<=9; j++){
     console.log(`${i} * ${j} は ${i*j}`);
   };
 };
-

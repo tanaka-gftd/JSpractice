@@ -3,6 +3,8 @@ if(message === 'ぬるぽ'){
   console.log('ガッ');
 };
 
+
+
 const number = 193;
 if(number % 3 === 0){
   console.log('サァン！');
@@ -10,11 +12,15 @@ if(number % 3 === 0){
   console.log(number);
 };
 
+
+
 if(number % 3 === 0 || /3/.test(number)){
   console.log('サァン！');
 } else {
   console.log(number);
 };
+
+
 
 const numberOfKaraage = 8;
 const price = 300;
@@ -24,12 +30,16 @@ if(numberOfKaraage >=8 && price <= 300){
   console.log('他の店を見てみる');
 };
 
+
+
 const aji = '美味しくない';
 if(numberOfKaraage >=6 && price <= 500 && aji === '美味しい'){
   console.log('買う');
 } else {
   console.log('他の店を見てみる');
 };
+
+
 
 const resultColor = 'red';
 if (resultColor==='red'){
@@ -39,6 +49,8 @@ if (resultColor==='red'){
 } else {
   console.log('中性');
 };
+
+
 
 const dice = Math.floor((Math.random()*6+1));
 switch (dice) {
